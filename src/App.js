@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ethers } from 'ethers';
 
 function App() {
   const [account, setAccount] = useState(null);
