@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Megaboard-V2/static/css/main.e6c13ad2.css",
+    "main.js": "/Megaboard-V2/static/js/main.e7757f09.js",
+    "static/js/453.a89962ab.chunk.js": "/Megaboard-V2/static/js/453.a89962ab.chunk.js",
+    "index.html": "/Megaboard-V2/index.html",
+    "main.e6c13ad2.css.map": "/Megaboard-V2/static/css/main.e6c13ad2.css.map",
+    "main.e7757f09.js.map": "/Megaboard-V2/static/js/main.e7757f09.js.map",
+    "453.a89962ab.chunk.js.map": "/Megaboard-V2/static/js/453.a89962ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e7757f09.js"
+  ]
+}
