@@ -1,38 +1,125 @@
-.App {
+body {
+  margin: 0;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.app {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.profile-section {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
+
+/* Notifications dropdown */
+.notifications-dropdown {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 220px;
+  background: #222;
   color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  z-index: 100;
 }
 
-.App-link {
-  color: #61dafb;
+.notification-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #444;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 120px;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.site-subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.post-box {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.post-input {
+  width: 100%;
+  height: 60px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  resize: none;
+}
+
+.post-button {
+  background: #0d6efd;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
 }
